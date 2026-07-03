@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Привычки</title>
+  <link rel="apple-touch-icon" href="data:image/png;base64,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">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="Привычки">
+  <style>body{margin:0}</style>
+  <script crossorigin src="https://cdn.jsdelivr.net/npm/react@18/umd/react.production.min.js"></script>
+  <script crossorigin src="https://cdn.jsdelivr.net/npm/react-dom@18/umd/react-dom.production.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@babel/standalone@7/babel.min.js"></script>
+</head>
+<body>
+  <div id="root"></div>
+  <div id="err" style="display:none;padding:24px;font-family:system-ui;color:#1C1A17">
+    Не загрузились скрипты (React/Babel). Проверь интернет и обнови страницу.
+  </div>
+  <script>
+    window.addEventListener("load", function () {
+      if (!window.React || !window.ReactDOM || !window.Babel) {
+        document.getElementById("err").style.display = "block";
+      }
+    });
+  </script>
+  <script type="text/babel" data-presets="react">
+const { useState, useEffect, useMemo } = React;
+
+/* ─── Design: «Ежедневник тушью» — hanji paper, sumi ink, vermilion seal (도장) for streaks ─── */
+
+const T = {
+  paper: "#F5F3ED",
+  card: "#FDFCF9",
+  ink: "#1C1A17",
+  faded: "#8A8478",
+  line: "#E4E0D5",
+  seal: "#BF3524",
+  sealSoft: "#F3DED9",
+};
+
+const ICONS = ["✍️", "📖", "🏃", "💧", "🧘", "🈚", "🎯", "🌙", "🥗", "🖌️"];
+const STORAGE_KEY = "habits-data-v1";
+
+/* ─── Date utils ─── */
+const dstr = (d) => {
+  const y = d.getFullYear(), m = String(d.getMonth() + 1).padStart(2, "0"), dd = String(d.getDate()).padStart(2, "0");
+  return `${y}-${m}-${dd}`;
+};
+const today = () => dstr(new Date());
+const addDays = (s, n) => { const d = new Date(s + "T12:00:00"); d.setDate(d.getDate() + n); return dstr(d); };
+const WEEKDAYS = ["Пн", "Вт", "Ср", "Чт", "Пт", "Сб", "Вс"];
+const MONTHS = ["Январь","Февраль","Март","Апрель","Май","Июнь","Июль","Август","Сентябрь","Октябрь","Ноябрь","Декабрь"];
+
+/* ─── Streak calc ─── */
+function calcStreak(completions) {
+  let cur = 0, d = today();
+  if (!completions[d]) d = addDays(d, -1); // сегодня ещё не отмечено — не рвём серию
+  while (completions[d]) { cur++; d = addDays(d, -1); }
+  // best
+  const dates = Object.keys(completions).sort();
+  let best = 0, run = 0, prev = null;
+  for (const dt of dates) {
+    run = prev && addDays(prev, 1) === dt ? run + 1 : 1;
+    if (run > best) best = run;
+    prev = dt;
+  }
+  return { cur, best };
+}
+
+function completionRate(h, days = 30) {
+  let done = 0;
+  for (let i = 0; i < days; i++) if (h.completions[addDays(today(), -i)]) done++;
+  return Math.round((done / days) * 100);
+}
+
+/* ─── Seal mark (signature element) ─── */
+function Seal({ size = 26, active, label }) {
+  return (
+    <div style={{
+      width: size, height: size, borderRadius: "26%",
+      display: "flex", alignItems: "center", justifyContent: "center",
+      transform: active ? "rotate(-4deg)" : "none",
+      background: active ? T.seal : "transparent",
+      border: active ? `1.5px solid ${T.seal}` : `1.5px solid ${T.line}`,
+      color: active ? "#FBF6F0" : T.line,
+      fontFamily: "'Gowun Batang', serif",
+      fontSize: size * 0.5, fontWeight: 700, lineHeight: 1,
+      boxShadow: active ? "0 0 0 2px rgba(191,53,36,0.12)" : "none",
+      transition: "all .18s ease",
+    }}>{active ? (label ?? "印") : ""}</div>
+  );
+}
+
+/* ─── Calendar month grid ─── */
+function MonthCal({ habit, month, year }) {
+  const first = new Date(year, month, 1);
+  const startOffset = (first.getDay() + 6) % 7; // Пн = 0
+  const daysInMonth = new Date(year, month + 1, 0).getDate();
+  const cells = [];
+  for (let i = 0; i < startOffset; i++) cells.push(null);
+  for (let d = 1; d <= daysInMonth; d++) cells.push(d);
+  const tstr = today();
+  return (
+    <div>
+      <div style={{ display: "grid", gridTemplateColumns: "repeat(7,1fr)", gap: 4, marginBottom: 4 }}>
+        {WEEKDAYS.map((w) => (
+          <div key={w} style={{ textAlign: "center", fontSize: 10, color: T.faded, letterSpacing: 1 }}>{w}</div>
+        ))}
+      </div>
+      <div style={{ display: "grid", gridTemplateColumns: "repeat(7,1fr)", gap: 4 }}>
+        {cells.map((d, i) => {
+          if (d === null) return <div key={i} />;
+          const ds = dstr(new Date(year, month, d));
+          const done = habit.completions[ds];
+          const isToday = ds === tstr;
+          const future = ds > tstr;
+          return (
+            <div key={i} style={{
+              aspectRatio: "1", display: "flex", alignItems: "center", justifyContent: "center",
+              borderRadius: "26%",
+              background: done ? T.seal : "transparent",
+              border: isToday ? `1.5px solid ${T.ink}` : `1px solid ${done ? T.seal : T.line}`,
+              color: done ? "#FBF6F0" : future ? T.line : T.faded,
+              fontSize: 11, fontWeight: done ? 700 : 400,
+              transform: done ? "rotate(-4deg)" : "none",
+            }}>{d}</div>
+          );
+        })}
+      </div>
+    </div>
+  );
+}
+
+/* ─── Main ─── */
+function HabitTracker() {
+  const [habits, setHabits] = useState(null); // null = загрузка
+  const [view, setView] = useState("today"); // today | calendar | stats
+  const [showForm, setShowForm] = useState(false);
+  const [editId, setEditId] = useState(null);
+  const [form, setForm] = useState({ name: "", icon: ICONS[0], target: 7 });
+  const now = new Date();
+  const [calMonth, setCalMonth] = useState(now.getMonth());
+  const [calYear, setCalYear] = useState(now.getFullYear());
+  const [selDate, setSelDate] = useState(today());
+
+  /* load */
+  useEffect(() => {
+    try {
+      const r = localStorage.getItem(STORAGE_KEY);
+      setHabits(r ? JSON.parse(r) : []);
+    } catch { setHabits([]); }
+  }, []);
+
+  /* save */
+  const persist = (next) => {
+    setHabits(next);
+    try { localStorage.setItem(STORAGE_KEY, JSON.stringify(next)); } catch {}
+  };
+
+  const toggle = (id, date = selDate) => {
+    persist(habits.map((h) => {
+      if (h.id !== id) return h;
+      const c = { ...h.completions };
+      c[date] ? delete c[date] : (c[date] = true);
+      return { ...h, completions: c };
+    }));
+  };
+
+  const saveHabit = () => {
+    if (!form.name.trim()) return;
+    if (editId) {
+      persist(habits.map((h) => (h.id === editId ? { ...h, name: form.name.trim(), icon: form.icon, target: form.target } : h)));
+    } else {
+      persist([...habits, { id: Date.now().toString(), name: form.name.trim(), icon: form.icon, target: form.target, createdAt: today(), completions: {} }]);
+    }
+    setShowForm(false); setEditId(null); setForm({ name: "", icon: ICONS[0], target: 7 });
+  };
+
+  const removeHabit = (id) => {
+    if (!confirm("Удалить привычку и всю её историю?")) return;
+    persist(habits.filter((h) => h.id !== id));
+  };
+
+  const startEdit = (h) => { setEditId(h.id); setForm({ name: h.name, icon: h.icon, target: h.target }); setShowForm(true); };
+
+  const weekDone = (h) => {
+    let n = 0;
+    const dow = (new Date().getDay() + 6) % 7;
+    for (let i = 0; i <= dow; i++) if (h.completions[addDays(today(), -i)]) n++;
+    return n;
+  };
+
+  const allDoneToday = habits && habits.length > 0 && habits.every((h) => h.completions[selDate]);
+
+  if (habits === null) return (
+    <div style={{ minHeight: "100vh", background: T.paper, display: "flex", alignItems: "center", justifyContent: "center", color: T.faded, fontFamily: "'Gowun Batang', serif" }}>Загрузка…</div>
+  );
+
+  const btn = (active) => ({
+    padding: "8px 14px", border: "none", background: "transparent", cursor: "pointer",
+    fontFamily: "'Gowun Batang', serif", fontSize: 15,
+    color: active ? T.ink : T.faded,
+    borderBottom: active ? `2px solid ${T.seal}` : "2px solid transparent",
+  });
+
+  const dLabel = new Date(selDate + "T12:00:00");
+
+  return (
+    <div style={{ minHeight: "100vh", background: T.paper, color: T.ink, fontFamily: "'Inter', system-ui, sans-serif" }}>
+      <link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+      <div style={{ maxWidth: 560, margin: "0 auto", padding: "28px 18px 60px" }}>
+
+        {/* Header */}
+        <header style={{ display: "flex", alignItems: "baseline", justifyContent: "space-between", marginBottom: 6 }}>
+          <h1 style={{ fontFamily: "'Gowun Batang', serif", fontSize: 30, fontWeight: 700, margin: 0 }}>
+            Привычки <span style={{ color: T.seal, fontSize: 20 }}>習</span>
+          </h1>
+          <button onClick={() => { setShowForm(true); setEditId(null); setForm({ name: "", icon: ICONS[0], target: 7 }); }}
+            style={{ background: T.ink, color: T.card, border: "none", borderRadius: 8, padding: "8px 14px", fontSize: 13, fontWeight: 600, cursor: "pointer" }}>
+            + Новая
+          </button>
+        </header>
+        <p style={{ margin: "0 0 18px", color: T.faded, fontSize: 13 }}>Каждый выполненный день — оттиск печати.</p>
+
+        {/* Tabs */}
+        <nav style={{ display: "flex", gap: 6, borderBottom: `1px solid ${T.line}`, marginBottom: 20 }}>
+          <button style={btn(view === "today")} onClick={() => setView("today")}>Сегодня</button>
+          <button style={btn(view === "calendar")} onClick={() => setView("calendar")}>Календарь</button>
+          <button style={btn(view === "stats")} onClick={() => setView("stats")}>Статистика</button>
+        </nav>
+
+        {/* Form */}
+        {showForm && (
+          <div style={{ background: T.card, border: `1px solid ${T.line}`, borderRadius: 12, padding: 16, marginBottom: 20 }}>
+            <div style={{ fontFamily: "'Gowun Batang', serif", fontWeight: 700, marginBottom: 10 }}>{editId ? "Изменить привычку" : "Новая привычка"}</div>
+            <input value={form.name} onChange={(e) => setForm({ ...form, name: e.target.value })}
+              placeholder="Название — напр. «30 мин корейского»"
+              style={{ width: "100%", boxSizing: "border-box", padding: "10px 12px", borderRadius: 8, border: `1px solid ${T.line}`, background: T.paper, fontSize: 14, marginBottom: 10, outline: "none" }} />
+            <div style={{ display: "flex", gap: 6, flexWrap: "wrap", marginBottom: 10 }}>
+              {ICONS.map((ic) => (
+                <button key={ic} onClick={() => setForm({ ...form, icon: ic })}
+                  style={{ fontSize: 18, padding: 6, borderRadius: 8, cursor: "pointer", background: form.icon === ic ? T.sealSoft : "transparent", border: form.icon === ic ? `1px solid ${T.seal}` : `1px solid ${T.line}` }}>{ic}</button>
+              ))}
+            </div>
+            <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 12, fontSize: 13, color: T.faded }}>
+              Цель в неделю:
+              <input type="range" min={1} max={7} value={form.target} onChange={(e) => setForm({ ...form, target: +e.target.value })} style={{ accentColor: T.seal }} />
+              <b style={{ color: T.ink }}>{form.target} дн.</b>
+            </div>
+            <div style={{ display: "flex", gap: 8 }}>
+              <button onClick={saveHabit} style={{ background: T.seal, color: "#FBF6F0", border: "none", borderRadius: 8, padding: "8px 16px", fontWeight: 600, cursor: "pointer" }}>Сохранить</button>
+              <button onClick={() => { setShowForm(false); setEditId(null); }} style={{ background: "transparent", color: T.faded, border: `1px solid ${T.line}`, borderRadius: 8, padding: "8px 16px", cursor: "pointer" }}>Отмена</button>
+            </div>
+          </div>
+        )}
+
+        {habits.length === 0 && !showForm && (
+          <div style={{ textAlign: "center", padding: "60px 0", color: T.faded }}>
+            <div style={{ fontSize: 40, marginBottom: 10 }}>🖌️</div>
+            <div style={{ fontFamily: "'Gowun Batang', serif", fontSize: 17 }}>Лист пока чист.</div>
+            <div style={{ fontSize: 13, marginTop: 6 }}>Нажмите «+ Новая», чтобы добавить первую привычку.</div>
+          </div>
+        )}
+
+        {/* ─── TODAY ─── */}
+        {view === "today" && habits.length > 0 && (
+          <>
+            <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: 14 }}>
+              <button onClick={() => setSelDate(addDays(selDate, -1))} style={{ border: "none", background: "none", cursor: "pointer", color: T.faded, fontSize: 18 }}>←</button>
+              <div style={{ fontFamily: "'Gowun Batang', serif", fontSize: 16 }}>
+                {selDate === today() ? "Сегодня" : dLabel.toLocaleDateString("ru-RU", { day: "numeric", month: "long" })}
+                <span style={{ color: T.faded, fontSize: 12, marginLeft: 8 }}>{WEEKDAYS[(dLabel.getDay() + 6) % 7]}</span>
+              </div>
+              <button onClick={() => setSelDate(addDays(selDate, 1))} disabled={selDate >= today()}
+                style={{ border: "none", background: "none", cursor: selDate >= today() ? "default" : "pointer", color: selDate >= today() ? T.line : T.faded, fontSize: 18 }}>→</button>
+            </div>
+
+            {habits.map((h) => {
+              const { cur } = calcStreak(h.completions);
+              const done = !!h.completions[selDate];
+              const wd = weekDone(h);
+              return (
+                <div key={h.id} onClick={() => toggle(h.id)}
+                  style={{ display: "flex", alignItems: "center", gap: 14, background: T.card, border: `1px solid ${done ? T.seal : T.line}`, borderRadius: 12, padding: "14px 16px", marginBottom: 10, cursor: "pointer", transition: "border-color .15s" }}>
+                  <Seal size={34} active={done} />
+                  <div style={{ flex: 1, minWidth: 0 }}>
+                    <div style={{ fontWeight: 600, fontSize: 15 }}>{h.icon} {h.name}</div>
+                    <div style={{ fontSize: 12, color: T.faded, marginTop: 2 }}>
+                      На этой неделе: {wd}/{h.target}
+                      {wd >= h.target && <span style={{ color: T.seal }}> ✓ цель</span>}
+                    </div>
+                  </div>
+                  {cur > 0 && (
+                    <div style={{ textAlign: "center", minWidth: 44 }}>
+                      <div style={{ fontFamily: "'Gowun Batang', serif", fontSize: 20, fontWeight: 700, color: T.seal }}>{cur}</div>
+                      <div style={{ fontSize: 10, color: T.faded, letterSpacing: 1 }}>СЕРИЯ</div>
+                    </div>
+                  )}
+                  <div onClick={(e) => e.stopPropagation()} style={{ display: "flex", flexDirection: "column", gap: 4 }}>
+                    <button onClick={() => startEdit(h)} title="Изменить" style={{ border: "none", background: "none", cursor: "pointer", color: T.faded, fontSize: 13 }}>✎</button>
+                    <button onClick={() => removeHabit(h.id)} title="Удалить" style={{ border: "none", background: "none", cursor: "pointer", color: T.faded, fontSize: 13 }}>✕</button>
+                  </div>
+                </div>
+              );
+            })}
+            {allDoneToday && (
+              <div style={{ textAlign: "center", marginTop: 18, fontFamily: "'Gowun Batang', serif", color: T.seal, fontSize: 15 }}>
+                Все печати поставлены. 완료.
+              </div>
+            )}
+          </>
+        )}
+
+        {/* ─── CALENDAR ─── */}
+        {view === "calendar" && habits.length > 0 && (
+          <>
+            <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: 16 }}>
+              <button onClick={() => { calMonth === 0 ? (setCalMonth(11), setCalYear(calYear - 1)) : setCalMonth(calMonth - 1); }}
+                style={{ border: "none", background: "none", cursor: "pointer", color: T.faded, fontSize: 18 }}>←</button>
+              <div style={{ fontFamily: "'Gowun Batang', serif", fontSize: 17, fontWeight: 700 }}>{MONTHS[calMonth]} {calYear}</div>
+              <button onClick={() => { calMonth === 11 ? (setCalMonth(0), setCalYear(calYear + 1)) : setCalMonth(calMonth + 1); }}
+                style={{ border: "none", background: "none", cursor: "pointer", color: T.faded, fontSize: 18 }}>→</button>
+            </div>
+            {habits.map((h) => (
+              <div key={h.id} style={{ background: T.card, border: `1px solid ${T.line}`, borderRadius: 12, padding: 16, marginBottom: 14 }}>
+                <div style={{ fontWeight: 600, marginBottom: 10, fontSize: 14 }}>{h.icon} {h.name}</div>
+                <MonthCal habit={h} month={calMonth} year={calYear} />
+              </div>
+            ))}
+          </>
+        )}
+
+        {/* ─── STATS ─── */}
+        {view === "stats" && habits.length > 0 && habits.map((h) => {
+          const { cur, best } = calcStreak(h.completions);
+          const rate = completionRate(h);
+          const total = Object.keys(h.completions).length;
+          return (
+            <div key={h.id} style={{ background: T.card, border: `1px solid ${T.line}`, borderRadius: 12, padding: 16, marginBottom: 12 }}>
+              <div style={{ fontWeight: 600, marginBottom: 12, fontSize: 14 }}>{h.icon} {h.name}</div>
+              <div style={{ display: "grid", gridTemplateColumns: "repeat(4,1fr)", gap: 8, textAlign: "center" }}>
+                {[["Серия", cur], ["Рекорд", best], ["30 дн.", rate + "%"], ["Всего", total]].map(([l, v]) => (
+                  <div key={l}>
+                    <div style={{ fontFamily: "'Gowun Batang', serif", fontSize: 22, fontWeight: 700, color: l === "Серия" && cur > 0 ? T.seal : T.ink }}>{v}</div>
+                    <div style={{ fontSize: 10, color: T.faded, letterSpacing: 1, textTransform: "uppercase" }}>{l}</div>
+                  </div>
+                ))}
+              </div>
+              {/* Последние 14 дней */}
+              <div style={{ display: "flex", gap: 4, marginTop: 14, justifyContent: "space-between" }}>
+                {Array.from({ length: 14 }, (_, i) => {
+                  const ds = addDays(today(), -(13 - i));
+                  return <Seal key={ds} size={18} active={!!h.completions[ds]} label="·" />;
+                })}
+              </div>
+              <div style={{ fontSize: 10, color: T.faded, marginTop: 4, textAlign: "right" }}>последние 14 дней →</div>
+            </div>
+          );
+        })}
+      </div>
+    </div>
+  );
+}
+
+ReactDOM.createRoot(document.getElementById("root")).render(<HabitTracker />);
+  </script>
+</body>
+</html>
